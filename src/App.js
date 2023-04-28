@@ -20,16 +20,18 @@ function App() {
     return <AnimalShow key={index} type={animal} />
   });
 
-  // const count=0;
-  // console.log({count}); count++;
-
   return (
     <div className="App">
       <button onClick={handleClick}>Add Animal</button>
-      <div>{renderedAnimals}</div>
+      <div className='animal-list'>{renderedAnimals}</div>
     </div>
   );
   
 }
 
 export default App;
+
+
+  // const count=0;
+  // console.log({count}); count++;
+
